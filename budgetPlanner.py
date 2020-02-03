@@ -9,6 +9,7 @@ import budgetClasses
 expenselst = []
 income_list = []
 income_amount = []
+
 # 1. Main menu; User picks an option.
 while True:
     Options = input(
@@ -22,7 +23,7 @@ while True:
         7 - Delete expense\n
         8 - Delete income\n
         9 - Get your net\n
-        10 - Go and **** yourself\n""")
+        10 - Exit\n""")
 # 2. Add Expense
     if Options == "1":
         inp_1 = input("Add Expense? [yes/no]: ")
@@ -40,6 +41,8 @@ while True:
         else:
             print("Enter a valid answer!")
 
+
+# Fix this later
 # 3. Add Income
     elif Options == "2":
         inp_6 = input("Add Income? [yes/no]: ")
@@ -51,7 +54,7 @@ while True:
                                                     "1 - job\n2 - allowance\n3 - loan\n4 - other\n5 - scholarship\n")]))
                     break
                 except KeyError:
-                    print("Please Enter Valid Input!")
+                    print("Please enter a valid input.")
         elif inp_6 == "no":
             break
         else:
@@ -86,7 +89,7 @@ while True:
         elif inp_4 == "no":
             print("Fuck you then! Why da fuck did you click on me?")
         else:
-            print("Enter a valid answer!!")
+            print("Enter a valid answer please.")
 # 8. Delete Expense
     elif Options == "7":
         inp_2 = input("Delete expense? [yes/no]:")
@@ -96,7 +99,7 @@ while True:
             inp_a = input("Which one?:")
             del expenselst[int(inp_a)]
         elif inp_2 == "no":
-            print("WHY did you click on me then?")
+            print("Go Back")
 # 9. Delete Income
     elif Options == "8":
         if input_3 == "yes":
@@ -105,7 +108,7 @@ while True:
             an_input = input("Which one?:")
             del income_list[int(an_input)]
         elif input_3 == "no":
-            print("Fuck you then! Why the fuck did you choose this option?")
+            print("Go Back")
 
 # 10. Get Total Net
     elif Options == "9":

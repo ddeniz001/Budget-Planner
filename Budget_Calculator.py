@@ -1,4 +1,4 @@
-import budget_classes
+import budgetClasses
 
 Options = int(input("Welcome to Budget Calculator. Please choose an option:\n 1 - "
                 "Add expense:\n 2 - "
@@ -22,7 +22,7 @@ if Options == 1:
                     'Enter Rent\n 5 - '
                     'Other 6')
     if inp == "1":
-        expense = budget_classes.Expense()
+        expense = budgetClasses.Expense()
         expense.print_expense()
 elif Options == 2:
     print(int(input('Enter Income:\n 1 - '
@@ -32,7 +32,7 @@ elif Options == 2:
                     'Enter Loan\n 5 -'
                     'Enter Other\n 6 - ')))
     if i == "2":
-        income = budget_classes.Income()
+        income = budgetClasses.Income()
         income.print_income()
 
 elif Options == 3:

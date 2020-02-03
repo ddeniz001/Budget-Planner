@@ -1,8 +1,5 @@
 # This program is written for the sole purpose of teaching you to be smarter with your budget.
-
 from enum import Enum
-
-# ------------------------------------------- *** EXPENSE CLASS *** ---------------------------
 
 # Main menu function for the program. Enumeration is used for convenience. (Will be added later.)
 
@@ -20,8 +17,6 @@ class menuOptions(Enum):
     EXIT = 10
 
 # Expense options for input. Given values so that the user can type it in themselves.
-
-
 class ExpenseCategory(Enum):  # Parent Class
     groceries = 1
     entertainment = 2
@@ -55,7 +50,6 @@ class Expense:
         return self.category.name.capitalize() + " Expense Amount: $" + str(self.price)
 
 
-# ---------------------------------------------*** INCOME CLASS ***-----------------------
 # Input options for user.
 class IncomeCategory(Enum):
     job = 1
